@@ -2,13 +2,17 @@
   "name": "api-rest-nodejs-2023",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node":">=18"
+   },
   "main": "index.js",
+  
   "scripts": {
     "dev": "tsx watch src/serve.ts",
     "lint": "eslint src --ext .ts",
     "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
     "test": "vitest",
-    "build":"tsup src --out-dir build"
+    "build": "tsup src --out-dir build"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +33,7 @@
     "dotenv": "^16.0.3",
     "fastify": "^4.16.3",
     "knex": "^2.4.2",
+    "pg": "^8.10.0",
     "sqlite3": "^5.1.6",
     "zod": "^3.21.4"
   }
