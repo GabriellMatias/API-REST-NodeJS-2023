@@ -1,5 +1,14 @@
+## Dependecies
 node_modules
 package-lock.json
+
+## DataBase
 database
+database/*.db
+
+## Envoriment
 .env
 .env.test
+
+## Build
+build
